@@ -1,13 +1,13 @@
 
-        // // Breed databases
-        // const cattleBreeds = [
-        //     { name: "Jersey", info: "Small dairy breed producing rich, high-butterfat milk, golden-brown colored" },
-        //     { name: "Brahman", info: "Heat-resistant breed with distinctive hump, ideal for tropical climates" },
+        // Breed databases
+        const cattleBreeds = [
+            { name: "Jersey", info: "Small dairy breed producing rich, high-butterfat milk, golden-brown colored" },
+            // { name: "Brahman", info: "Heat-resistant breed with distinctive hump, ideal for tropical climates" },
            
-        // ];
+        ];
 
         const buffaloBreeds = [
-            { name: "Murrah Buffalo", info: "Premier dairy breed from India with excellent milk production" },
+            // { name: "Murrah Buffalo", info: "Premier dairy breed from India with excellent milk production" },
             // { name: "Jafarabadi Buffalo", info: "Large Indian breed with good milk yield and draught power" },
         ];
 
