@@ -28,22 +28,18 @@
             const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
             
             function createMatrixChar() {
-    const char = document.createElement('div');
-    char.className = 'matrix-char';
-    char.textContent = chars[Math.floor(Math.random() * chars.length)];
-    
-    // Permanent position between 82% and 88%
-    char.style.left = (82 + Math.random() * 6) + '%';
-    
-    char.style.animationDuration = (Math.random() * 8 + 5) + 's';
-    char.style.animationDelay = Math.random() * 2 + 's';
-    matrixContainer.appendChild(char);
-    
-    setTimeout(() => {
-        if (char.parentNode) char.remove();
-    }, 15000);
-}
-
+                const char = document.createElement('div');
+                char.className = 'matrix-char';
+                char.textContent = chars[Math.floor(Math.random() * chars.length)];
+                char.style.left = Math.random() * 100 + '%';
+                char.style.animationDuration = (Math.random() * 8 + 5) + 's';
+                char.style.animationDelay = Math.random() * 2 + 's';
+                matrixContainer.appendChild(char);
+                
+                setTimeout(() => {
+                    if (char.parentNode) char.remove();
+                }, 15000);
+            }
             
             setInterval(createMatrixChar, 300);
         }
