@@ -6,10 +6,10 @@
            
         ];
 
-        const buffaloBreeds = [
-            // { name: "Murrah Buffalo", info: "Premier dairy breed from India with excellent milk production" },
-            // { name: "Jafarabadi Buffalo", info: "Large Indian breed with good milk yield and draught power" },
-        ];
+        // const buffaloBreeds = [
+        //     // { name: "Murrah Buffalo", info: "Premier dairy breed from India with excellent milk production" },
+        //     // { name: "Jafarabadi Buffalo", info: "Large Indian breed with good milk yield and draught power" },
+        // ];
 
         // Camera and live analysis variables
         let currentStream = null;
