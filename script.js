@@ -1,8 +1,8 @@
 
         // Breed databases
         const cattleBreeds = [
-            { name: "Jersey", info: "Small dairy breed producing rich, high-butterfat milk, golden-brown colored" },
-            // { name: "Brahman", info: "Heat-resistant breed with distinctive hump, ideal for tropical climates" },
+            // { name: "Jersey", info: "Small dairy breed producing rich, high-butterfat milk, golden-brown colored" },
+            { name: "Brahman", info: "Heat-resistant breed with distinctive hump, ideal for tropical climates" },
            
         ];
 
