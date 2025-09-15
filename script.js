@@ -1,33 +1,14 @@
 
-        // Breed databases
-        const cattleBreeds = [
-            { name: "Holstein", info: "Large dairy breed known for high milk production and distinctive black and white markings" },
-            { name: "Angus", info: "Premium beef breed, naturally hornless with excellent marbling and meat quality" },
-            { name: "Hereford", info: "Docile beef breed with distinctive red body and white face markings" },
-            { name: "Jersey", info: "Small dairy breed producing rich, high-butterfat milk, golden-brown colored" },
-            { name: "Brahman", info: "Heat-resistant breed with distinctive hump, ideal for tropical climates" },
-            { name: "Charolais", info: "Large French beef breed, cream-colored with excellent growth rates" },
-            { name: "Limousin", info: "Lean beef breed from France, known for muscular build and efficiency" },
-            { name: "Simmental", info: "Dual-purpose breed, good for both milk and beef production" },
-            { name: "Guernsey", info: "Medium-sized dairy breed producing golden-colored milk" },
-            { name: "Brown Swiss", info: "Ancient dairy breed known for longevity and high protein milk" },
-            { name: "Shorthorn", info: "Versatile breed used for both milk and beef production" },
-            { name: "Highland", info: "Hardy Scottish breed with long hair, adapted to harsh climates" }
-        ];
+        // // Breed databases
+        // const cattleBreeds = [
+        //     { name: "Jersey", info: "Small dairy breed producing rich, high-butterfat milk, golden-brown colored" },
+        //     { name: "Brahman", info: "Heat-resistant breed with distinctive hump, ideal for tropical climates" },
+           
+        // ];
 
         const buffaloBreeds = [
-            { name: "Murrah Buffalo", info: "Premier dairy breed from India with excellent milk production" },
-            { name: "Nili-Ravi Buffalo", info: "High-yielding dairy breed from Pakistan and India" },
-            { name: "Mediterranean Buffalo", info: "European breed known for mozzarella cheese production" },
+            // { name: "Murrah Buffalo", info: "Premier dairy breed from India with excellent milk production" },
             { name: "Jafarabadi Buffalo", info: "Large Indian breed with good milk yield and draught power" },
-            { name: "Mehsana Buffalo", info: "Indian breed known for high milk production and disease resistance" },
-            { name: "Nagpuri Buffalo", info: "Medium-sized Indian breed with good milk quality" },
-            { name: "Toda Buffalo", info: "Indigenous breed from Nilgiri hills, adapted to hilly terrain" },
-            { name: "Pandharpuri Buffalo", info: "Indian breed known for high butterfat content in milk" },
-            { name: "Bhadawari Buffalo", info: "Small Indian breed with rich milk quality" },
-            { name: "Chilika Buffalo", info: "Swamp buffalo breed from eastern India" },
-            { name: "Kalahandi Buffalo", info: "Indian breed with good adaptation to local conditions" },
-            { name: "Surti Buffalo", info: "Medium-sized Indian breed with good milk quality" }
         ];
 
         // Camera and live analysis variables
@@ -47,18 +28,22 @@
             const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
             
             function createMatrixChar() {
-                const char = document.createElement('div');
-                char.className = 'matrix-char';
-                char.textContent = chars[Math.floor(Math.random() * chars.length)];
-                char.style.left = Math.random() * 100 + '%';
-                char.style.animationDuration = (Math.random() * 8 + 5) + 's';
-                char.style.animationDelay = Math.random() * 2 + 's';
-                matrixContainer.appendChild(char);
-                
-                setTimeout(() => {
-                    if (char.parentNode) char.remove();
-                }, 15000);
-            }
+    const char = document.createElement('div');
+    char.className = 'matrix-char';
+    char.textContent = chars[Math.floor(Math.random() * chars.length)];
+    
+    // Permanent position between 82% and 88%
+    char.style.left = (82 + Math.random() * 6) + '%';
+    
+    char.style.animationDuration = (Math.random() * 8 + 5) + 's';
+    char.style.animationDelay = Math.random() * 2 + 's';
+    matrixContainer.appendChild(char);
+    
+    setTimeout(() => {
+        if (char.parentNode) char.remove();
+    }, 15000);
+}
+
             
             setInterval(createMatrixChar, 300);
         }
